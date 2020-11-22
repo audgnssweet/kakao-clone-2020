@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Welcome to kakao-clone</title>
+  </head>
+
+  <body>
+    <div class="statusbar">
+      <div class="statusbar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="statusbar__column">
+        <span>18:43</span>
+      </div>
+      <div class="statusbar__column">
+        <span>80%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="login_header">
+      <h1 class="login_header__title">Welcome to KaKaoTalk</h1>
+      <p class="login_header__paragraph">
+        If you have a Kakao Account,<br />
+        log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="./friends.html" method="GET" class="login_form">
+      <input
+        name="ID"
+        required
+        class="login_form_text"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        name="password"
+        required
+        class="login_form_text"
+        type="password"
+        placeholder="Password"
+      />
+      <input class="login_form_button" type="submit" value="Log In" />
+      <input class="login_form_button" type="submit" value="Sign Up" />
+      <a href="#">Find Kakao Account or Password</a>
+    </form>
+
+    <div class="splash_screen">
+      <i class="fas fa-comment"></i>
+    </div>
+
+    <div class="too_wide">
+      <span>Your Screen Is Super Big<br />plz make your screen smaller</span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  </body>
+</html>

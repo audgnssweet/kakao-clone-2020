@@ -1,0 +1,32 @@
+/* 세팅과 채팅방에서만 쓰는 헤더를 디자인합니다. */
+.alt_screen_header {
+  display: flex;
+  align-items: center;
+  padding: 7px var(--horizontal-space);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.alt_screen_header__column {
+  width: 33%;
+  display: flex;
+}
+
+.alt_screen_header__column span {
+  font-weight: 700;
+  font-size: 23px;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+.alt_screen_header__column:nth-child(2) {
+  justify-content: center;
+}
+
+.alt_screen_header__column:last-child {
+  justify-content: flex-end;
+}
+
+.alt_screen_header__column:last-child span {
+  margin-left: 20px;
+}

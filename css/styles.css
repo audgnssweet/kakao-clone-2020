@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import "./reset.css";
+@import "./variables.css";
+
+/* components */
+@import "./components/statusbar.css";
+@import "./components/navbar.css";
+@import "./components/stdheader.css";
+@import "./components/alt_screen_header.css";
+@import "./components/user_profile.css";
+@import "./components/alarm.css";
+@import "./components/opacity.css";
+@import "./components/openchat_profile.css";
+@import "./components/iconbox.css";
+@import "./components/suggest_icon.css";
+@import "./components/setting_items.css";
+@import "./components/messages.css";
+@import "./components/too_wide.css";
+
+/* screens */
+@import "./screens/loginpage.css";
+@import "./screens/friendspage.css";
+@import "./screens/findpage.css";
+@import "./screens/morepage.css";
+@import "./screens/settingspage.css";
+@import "./screens/chattingpage.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 30px;
+  height: 130vh;
+}
+
+.screen_default {
+  margin: 9px var(--horizontal-space);
+}

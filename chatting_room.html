@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Chatting - kakao-clone</title>
+  </head>
+
+  <body id="chatting_screen">
+    <div class="statusbar">
+      <div class="statusbar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="statusbar__column">
+        <span>18:43</span>
+      </div>
+      <div class="statusbar__column">
+        <span>80%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <div class="alt_screen_header">
+      <div class="alt_screen_header__column">
+        <a href="./chats.html"><i class="fas fa-angle-left fa-2x"></i></a>
+      </div>
+      <div class="alt_screen_header__column"><span>Nicolas serano</span></div>
+      <div class="alt_screen_header__column">
+        <span><i class="fas fa-search"></i></span>
+        <span><i class="fas fa-bars"></i></span>
+      </div>
+    </div>
+
+    <main class="screen_default">
+      <div class="chatting_timestamp">
+        <span>Tuesday, June 30, 2020</span>
+      </div>
+      <div class="receive_message">
+        <div class="receive_message__column">
+          <img
+            class="receive_message__profile_picture"
+            src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2106DF40572100170B"
+            alt="받는 메시지의 프로필 사진입니다."
+          />
+        </div>
+        <div class="receive_message__column">
+          <span class="receive_message__name">Nicolas Serrano</span>
+          <div class="receive_message__chatting_and_time">
+            <span class="receive_message__chatting">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="passing_message">
+        <span class="message__time">21:27</span>
+        <span class="passing_message__chatting">What's up?</span>
+      </div>
+    </main>
+
+    <form action="#" class="reply">
+      <div class="reply_column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="reply_column">
+        <input type="text" placeholder="input message" />
+        <i class="far fa-kiss-wink-heart"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div class="too_wide">
+      <span>Your Screen Is Too Big<br />plz make your screen smaller</span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  </body>
+</html>

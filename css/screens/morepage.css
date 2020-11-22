@@ -1,0 +1,36 @@
+/* more 탭을 디자인합니다. */
+
+#exclaim_icon {
+  color: tomato;
+}
+
+/* more 탭 > suggestion 탭 > icons를 디자인합니다. */
+.suggestions_title {
+  padding: 15px 0px;
+  font-weight: 600;
+}
+
+.suggestions_icon_box {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.suggestions_icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin-top: 10px;
+}
+
+.suggestions_icon__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+}
+
+.suggestions_icon__text {
+  display: block;
+  margin-top: 8px;
+  opacity: 0.6;
+}

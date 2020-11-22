@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Chats - kakao-clone</title>
+  </head>
+
+  <body>
+    <div class="statusbar">
+      <div class="statusbar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="statusbar__column">
+        <span>18:43</span>
+      </div>
+      <div class="statusbar__column">
+        <span>80%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <ul class="navbar_list">
+        <li>
+          <a class="navbar_list__item" href="./friends.html"><i class="far fa-user fa-2x"></i></a>
+        </li>
+        <li>
+          <a class="navbar_list__item" href="./chats.html">
+            <i class="fas fa-comment fa-2x"></i>
+          </a>
+          <span class="alarm">1</span>
+        </li>
+        <li>
+          <a class="navbar_list__item" href="./find.html"><i class="fas fa-search fa-2x"></i></a>
+        </li>
+        <li>
+          <a class="navbar_list__item" href="./more.html">
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+          <div class="alarm__dot"></div>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="std_header">
+      <h1 class="std_header__title">Chats</h1>
+      <div class="std_header__icons">
+        <a href="#"><i class="fas fa-search fa-lg"></i></a>
+        <a href="#"><i class="fas fa-comment-medical fa-lg"></i></a>
+        <a href="#"><i class="fas fa-music fa-lg"></i></a>
+        <a href="./settings.html"><i class="fas fa-cog fa-lg"></i></a>
+      </div>
+    </header>
+
+    <main class="screen_default">
+      <a href="./chatting_room.html">
+        <div class="user_profile">
+          <div class="user_profile__column">
+            <img
+              src="https://lh3.googleusercontent.com/Ob9Ys8yKMeyKzZvl3cB9JNSTui1lJwjSKD60IVYnlvU2DsahysGENJE-txiRIW9_72Vd"
+              class="user_profile__picture"
+              alt="프로필 사진입니다."
+            />
+            <div class="user_profile__name_n_status">
+              <span class="user_profile__name">KakaoTalk</span>
+              <span class="user_profile__status"> Please check My Kakao Account Info </span>
+            </div>
+          </div>
+          <div class="user_profile__column">
+            <span class="user_profile__time">21:22</span>
+            <div class="alarm">1</div>
+          </div>
+        </div>
+      </a>
+    </main>
+
+    <div class="too_wide">
+      <span>Your Screen Is Too Big<br />plz make your screen smaller</span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  </body>
+</html>

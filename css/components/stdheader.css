@@ -1,0 +1,31 @@
+/* 각 탭의 제목들을 표현하는 헤더를 디자인합니다. */
+.std_header {
+  display: flex;
+  box-sizing: border-box;
+  padding: var(--horizontal-space);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.std_header__title {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.std_header__icons a {
+  margin-left: 20px;
+  position: relative;
+}
+
+/* 헤더의 설정 이모티콘의 애니메이션 디자인 */
+@keyframes std_header__cogAnimation {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.std_header .fa-cog:hover {
+  animation: std_header__cogAnimation 1s linear infinite;
+}

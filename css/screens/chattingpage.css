@@ -1,0 +1,128 @@
+/* 채팅 스크린만의 고유한 배경색 설정 */
+#chatting_screen {
+  background-color: #abc0d1;
+  height: 300vh;
+}
+/* 채팅 스크린을 스크롤하기 위한 z-index */
+#chatting_screen .statusbar {
+  background-color: #abc0d1;
+  z-index: 2;
+  padding-bottom: 10px;
+}
+
+#chatting_screen .alt_screen_header {
+  position: fixed;
+  background-color: #abc0d1;
+  z-index: 1;
+}
+
+/* 채팅 스크린의 fade-in 애니메이션을 디자인합니다. */
+#chatting_screen .screen_default {
+  padding-top: 40px;
+  animation: fade_in 0.5s linear;
+}
+@keyframes fade_in {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 채팅 스크린의 타임스탬프와 애니메이션을 디자인합니다. */
+@keyframes timestamp_animation {
+  0% {
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+  }
+}
+.chatting_timestamp {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+.chatting_timestamp span {
+  display: block;
+  color: white;
+  background-color: gray;
+  padding: 8px 13px;
+  border-radius: 20px;
+  font-size: 13px;
+  opacity: 0.6;
+  animation: timestamp_animation 1s linear 3;
+}
+
+/* 채팅 스크린의 입력바를 디자인합니다. */
+.reply {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 13px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+.reply_column:first-child {
+  box-sizing: border-box;
+  display: flex;
+  font-size: 24px;
+  transition: all 0.3s linear;
+}
+.reply input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  padding-left: 10px;
+}
+.reply_column > i {
+  opacity: 0.4;
+}
+.reply_column:last-child {
+  box-sizing: border-box;
+  width: 92%;
+  position: relative;
+  transition: all 0.3s linear;
+}
+.reply_column:last-child > i {
+  position: absolute;
+  right: 43px;
+  top: 4.5px;
+  font-size: 21px;
+}
+.reply_column:last-child button {
+  position: absolute;
+  right: 2px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  background-color: var(--yellow);
+  border: none;
+  top: 1.7px;
+}
+.reply button:focus,
+.reply button:active {
+  outline: none;
+}
+/* 입력 바의 애니메이션을 디자인합니다. */
+.reply:focus-within .reply_column:first-child,
+.reply:focus-within .fa-kiss-wink-heart {
+  opacity: 0;
+}
+.reply:focus-within .reply_column:last-child {
+  transform: translateX(-4%) translateY(-40px);
+}
+.reply:focus-within {
+  transform: translateY(40px);
+}

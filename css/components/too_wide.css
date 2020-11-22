@@ -1,0 +1,22 @@
+/* 모바일을 위한 연습이므로 화면이 클 때에는 화면을 보여주지 않습니다.
+media query 디자인 */
+.too_wide {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--yellow);
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 600px) {
+  .too_wide {
+    display: none;
+  }
+}

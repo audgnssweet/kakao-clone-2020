@@ -1,0 +1,49 @@
+/* 채팅방의 받는 메시지를 디자인합니다. */
+.receive_message {
+  display: flex;
+  margin: 20px 0px;
+}
+.receive_message__profile_picture {
+  width: 42px;
+  height: 42px;
+  border-radius: 40%;
+  margin-right: 7px;
+}
+.receive_message__name {
+  opacity: 0.65;
+}
+.receive_message__chatting_and_time {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 7px;
+}
+.receive_message__chatting {
+  display: block;
+  background-color: white;
+  padding: 9px;
+  border-radius: 12px;
+  border-top-left-radius: 0px;
+  margin-right: 4px;
+}
+.message__time {
+  font-size: 12px;
+  opacity: 0.65;
+}
+/* 채팅방의 보내는 메시지를 디자인합니다. */
+.passing_message {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 20px 0px;
+}
+
+.passing_message__chatting {
+  display: block;
+  background-color: var(--yellow);
+  display: block;
+  padding: 9px;
+  border-radius: 12px;
+  border-top-right-radius: 0px;
+  margin-right: 4px;
+  margin-left: 5px;
+}

@@ -1,0 +1,35 @@
+/* 맨 위에 고정된 상태바를 디자인합니다. */
+.statusbar {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  z-index: 7;
+  background-color: white;
+}
+
+.statusbar__column {
+  display: flex;
+  width: 33%;
+  align-items: center;
+  font-weight: 600;
+}
+
+.statusbar__column:nth-child(1) span {
+  margin-right: 5px;
+}
+
+.statusbar__column:nth-child(2) {
+  justify-content: center;
+}
+
+.statusbar__column:nth-child(3) {
+  justify-content: flex-end;
+}
+
+.statusbar__column .fa-battery-three-quarters {
+  margin: 0px 5px;
+}

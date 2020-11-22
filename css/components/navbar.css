@@ -1,0 +1,76 @@
+/* 아래 화면에 고정되어있는 네비게이션 바를 디자인합니다. */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: #f9f9f9;
+}
+
+.navbar_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  border-top: 1px solid rgb(0, 0, 0, 0.05);
+}
+
+.navbar_list__item {
+  color: RGB(47, 54, 62);
+}
+
+.navbar_list li:nth-child(2) {
+  display: flex;
+  position: relative;
+}
+
+.navbar_list li:nth-child(2) span {
+  position: absolute;
+  right: -7px;
+  top: -5px;
+}
+
+.navbar_list li:nth-child(4) {
+  display: flex;
+  position: relative;
+}
+
+/* 네비게이션 바의 알람 애니메이션을 디자인합니다. */
+@keyframes navbarAlarm_animation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+.navbar .alarm {
+  animation: navbarAlarm_animation 2s ease-in-out infinite;
+}
+
+/* 네비게이션 바 아이콘들의 애니메이션을 디자인합니다. */
+.navbar_list li {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: navbarItems_animation 0.3s ease-in-out forwards;
+}
+@keyframes navbarItems_animation {
+  from {
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.navbar_list li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.navbar_list li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.navbar_list li:last-child {
+  animation-delay: 0.9s;
+}

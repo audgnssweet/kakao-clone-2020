@@ -1,0 +1,121 @@
+/* find페이지를 디자인합니다. */
+
+/* 설정 아이콘 위의 알림 위치 */
+#upperdot {
+  top: -5px;
+}
+
+/* 친구 추천 창을 디자인합니다. */
+.recommend_fr {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.recommend_fr__title {
+  margin-top: 15px;
+}
+
+.recommend_fr_text {
+  text-align: center;
+  padding: 70px 0px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+/* 오픈채팅 타이틀바를 디자인합니다. */
+.open-chat_titlebar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.open-chat_titlebar_column {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.open-chat_titlebar_column:nth-child(2) span {
+  margin-right: 5px;
+}
+
+/* 오픈채팅 바를 디자인합니다. */
+.open-chat_main {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 10px 0px;
+}
+
+.open-chat__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-chat__column:first-child {
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+
+.open-chat_tags {
+  font-size: 13px;
+  margin: 5px 0px;
+  opacity: 0.5;
+}
+
+.open-chat_details {
+  font-size: 13px;
+}
+
+.open-chat_details > span:nth-child(2) {
+  opacity: 0.5;
+}
+
+.open-chat__state {
+  color: #f28bca;
+}
+
+/* 오픈채팅방 사진과 좋아요를 디자인합니다. */
+.open-chat__column:nth-child(2) {
+  position: relative;
+}
+
+.open-chat__picture {
+  width: 70px;
+  height: 70px;
+  border-radius: 10%;
+}
+
+.open-chat__thumbsup {
+  background-color: #5d566b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 46px;
+  height: 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  right: 3px;
+  opacity: 0.8;
+}
+
+/* 오픈채팅의 하트와 애니메이션을 디자인합니다. */
+#heart {
+  font-size: 1px;
+  margin-right: 3px;
+}
+
+@keyframes heart_beat {
+  0% {
+  }
+  50% {
+    transform: scale(2);
+    color: red;
+  }
+  100% {
+  }
+}
+.open-chat__column:last-child:hover #heart {
+  will-change: transform, color;
+  animation: heart_beat 1s linear infinite;
+}
